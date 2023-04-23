@@ -7,22 +7,26 @@ import os
 app = Flask('__name__', template_folder="templates")
 
 last_letter = ""
-model = load_model(r"C:/project/cnn_model.h5")
+model = load_model("cnn_model.h5")
 
-path = r"C:\project\asl_alphabet_train\asl_alphabet_train"
+# path = r"C:\project\asl_alphabet_train\asl_alphabet_train"
 
-folders = os.listdir(path)
-extra_letter = ['del', 'space', 'nothing']
-extra_letter_path = []
-for letter in folders:
-    if letter in extra_letter:
-        extra_letter_path.append(letter)
-        folders.remove(letter)
-folders.sort()
+# folders = os.listdir(path)
+# extra_letter = ['del', 'space', 'nothing']
+# extra_letter_path = []
+# for letter in folders:
+#     if letter in extra_letter:
+#         extra_letter_path.append(letter)
+#         folders.remove(letter)
+# folders.sort()
 
-folders += extra_letter_path
-img_classes = [os.path.join(path, letter) for letter in folders]
+# folders += extra_letter_path
+# print(folders)
+# img_classes = [os.path.join(path, letter) for letter in folders]
 # print(img_classes)
+
+folders = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'del', 'nothing', 'space']
+print(folders[4])
 
 @app.route("/")
 def index():
