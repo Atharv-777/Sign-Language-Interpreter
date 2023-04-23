@@ -1,0 +1,46 @@
+body{
+    /* background: #051630; */
+    background-image: url(cool-background.svg);
+    background-size:cover;
+}
+
+.desc{
+    color: rgba(0, 0, 0, 0.685);
+}
+
+.col{
+    margin-right: 20px;
+}
+.btn{
+    padding: 10px 20% 10px 20%;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+.stt{
+    color: rgb(31, 31, 31);
+    border: 1px solid rgb(31, 31, 31);
+}
+.stt:hover{
+    background: rgb(88, 70, 129);
+    color: white;
+}
+.tts{
+    background: rgb(88, 70, 129);
+    color: white;
+}
+.tts:hover{
+    border: 1px solid rgb(31, 31, 31);;
+    background: rgba(88, 70, 129, 0);
+}
+
+.videoImg{
+    border-radius: 10px;
+    height: 65%;
+}
+.textArea{
+    width: 65%;
+    height: 100px;
+    background: rgb(240, 213, 213);
+    margin-top: 20px;
+    border-radius: 6px;
+}
